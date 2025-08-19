@@ -4416,43 +4416,8 @@ display: none;
 </div>
 
 
-<pre class="r"><code>leaflet(map_data) %&gt;%
-  addTiles() %&gt;%
-  addCircleMarkers(lng = ~Longitude, lat = ~Latitude, 1, popup = ~Address)</code></pre>
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-5298d734efcb0800337e" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-5298d734efcb0800337e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addCircleMarkers","args":[[41.50661,40.52701,40.53348,40.39174,41.75664,40.62378,41.18603,41.24437,40.03221,40.35368,40.68322,40.75194,40.56042,40.72421,40.57404,40.66878,40.68413,40.7141],[-112.0166,-111.8718,-112.0141,-111.8248,-111.8371,-111.8867,-111.95,-111.977,-111.7339,-111.7372,-111.9377,-111.8983,-111.8764,-111.8901,-111.9219,-111.9849,-112.0258,-112.0264],1,null,null,{"interactive":true,"className":"","stroke":true,"color":"#03F","weight":5,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.2},null,null,["156 S Main St Brigham City, UT","212 E 12300 S Draper, UT","11969 Carlsbad Way Herriman, UT","1550 E 3500 N Lehi, UT","1341 Main St Logan, UT","7020 S 700 W Midvale, UT","4275 Harrison Blvd Ogden, UT","205 W 12th St Ogden, UT","632 S 100 W Payson, UT","210 E 700 S Pleasant Grove, UT","4065 S Redwood Rd Salt Lake City, UT","876 E 800 S Salt Lake City, UT","2039 E 9400 S Sandy, UT","2193 S Main St South Salt Lake, UT","4080 W 9000 S West Jordan, UT","4643 S 4000 W West Valley City, UT","5620 W 4100 S West Valley City, UT","2572 S 5600 W West Valley City, UT"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[40.03221,41.75664],"lng":[-112.0264,-111.7339]}},"evals":[],"jsHooks":[]}</script>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the
-code chunk to prevent printing of the R code that generated the
-plot.</p>
-<!-- --- -->
-<!-- title: "Stephanie's Housing Request" -->
-<!-- output:  -->
-<!--   html_document: -->
-<!--     theme: cerulean -->
-<!--     code_folding: hide -->
-<!--     toc: true -->
-<!--     toc_float: true -->
-<!-- --- -->
-<!-- ```{r, message=FALSE, warning=FALSE} -->
-<!-- library(mosaic) -->
-<!-- library(tidyverse) -->
-<!-- library(leaflet) -->
-<!-- library(pander) -->
-<!-- library(DT) # If you get an error stating:  -->
-<!--             # Error in library(DT): there is no package called 'DT' -->
-<!--             # You will need to run: install.packages("DT")  -->
-<!--             # in your Console, then try "Knit HTML" again. -->
-<!-- Rent <- read_csv("../Data/Rent.csv") -->
-<!-- ```{r} -->
-<!-- # Code to get you started, be sure to use a subset of Rent instead of Rent in this code though. -->
-<!-- clean_women_housing <- filter(Rent, Gender=="F") -->
-<!-- clean_women_housing <- select(clean_women_housing, c(Name, AvgFloorPlanCost, Residents, WebAddress) ) -->
-<!-- datatable(clean_women_housing, options=list(lengthMenu = c(5,10,30)), extensions="Responsive") -->
-<!-- ``` -->
-<!-- ```{r} -->
-<!-- women_housing <- filter(Rent, Gender=="F") -->
-<!-- ggplot(women_housing) + -->
-<!--   geom_histogram(aes(x=AvgFloorPlanCost, fill = AvgFloorPlanCost < 1000), colour = "black",bins = 13) + theme_minimal()+ labs( x="Average Floor Plan Cost", y="Count", title="11 of the Apartment Complexes \nCost Less Than $1000 per Semester", fill = "Average Floor Plan\n Less Than $1000") -->
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-0ce0a26f5788f75217d9" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-0ce0a26f5788f75217d9">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addCircleMarkers","args":[[41.50661,40.52701,40.53348,40.39174,41.75664,40.62378,41.18603,41.24437,40.03221,40.35368,40.68322,40.75194,40.56042,40.72421,40.57404,40.66878,40.68413,40.7141],[-112.0166,-111.8718,-112.0141,-111.8248,-111.8371,-111.8867,-111.95,-111.977,-111.7339,-111.7372,-111.9377,-111.8983,-111.8764,-111.8901,-111.9219,-111.9849,-112.0258,-112.0264],1,null,null,{"interactive":true,"className":"","stroke":true,"color":"#03F","weight":5,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.2},null,null,["156 S Main St Brigham City, UT","212 E 12300 S Draper, UT","11969 Carlsbad Way Herriman, UT","1550 E 3500 N Lehi, UT","1341 Main St Logan, UT","7020 S 700 W Midvale, UT","4275 Harrison Blvd Ogden, UT","205 W 12th St Ogden, UT","632 S 100 W Payson, UT","210 E 700 S Pleasant Grove, UT","4065 S Redwood Rd Salt Lake City, UT","876 E 800 S Salt Lake City, UT","2039 E 9400 S Sandy, UT","2193 S Main St South Salt Lake, UT","4080 W 9000 S West Jordan, UT","4643 S 4000 W West Valley City, UT","5620 W 4100 S West Valley City, UT","2572 S 5600 W West Valley City, UT"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[40.03221,41.75664],"lng":[-112.0264,-111.7339]}},"evals":[],"jsHooks":[]}</script>
 
 
 
